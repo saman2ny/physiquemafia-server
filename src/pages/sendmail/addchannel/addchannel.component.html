@@ -1,0 +1,22 @@
+<div>
+    <input type="text" class="esd-block-text" id="esd-block-text">
+<ul>
+    <li (click)="getFieldName('Ezhil')">Ezhil</li>
+    <li (click)="getFieldName('EzhilPro')"> EzhilPro</li>
+    <li (click)="getFieldName('EzhilProMax')">EzhilProMax</li>
+</ul>
+</div>
+<div id="externalSystemContainer">
+    <!--This is external system container where you can place plugin buttons -->
+    <button id="undoButton" class="control-button">Undo</button>
+    <button id="redoButton" class="control-button">Redo</button>
+    <button id="codeEditor" class="control-button">Code editor</button>
+    <button id="previewButton"  class="control-button">Preview</button>
+    <button id="exportButton"  class="control-button">Export</button>
+
+    <span id="changeHistoryContainer" >Last change: <a id="changeHistoryLink"></a></span>
+</div>
+<div class="notification-zone"></div>
+
+<div id="stripoSettingsContainer">Loading...</div>
+<div id="stripoPreviewContainer" ></div>
