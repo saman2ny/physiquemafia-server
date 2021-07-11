@@ -14,7 +14,7 @@ export class ApiService {
 
   constructor(private http: HttpClient, private common: CommonService, public constantsService: ConstantsService) { }
   // logesh
-  baseUrl = 'http://127.0.0.1/common-backend/';
+  baseUrl = 'http://127.0.0.1/physiquemafia-server/';
 
   // mukesh
   // baseUrl = 'http://172.16.8.222:8084/EA/';

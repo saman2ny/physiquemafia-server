@@ -5,18 +5,6 @@ Version      : 3.6
 */
 function myMethod(){
 
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function() {
 	
 	// Variables declarations

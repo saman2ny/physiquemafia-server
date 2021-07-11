@@ -74,6 +74,9 @@ Version      : 3.6
 
 ========================================*/
 
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+
+
 @font-face {
 	font-family: 'Material Icons';
 	font-style: normal;
@@ -1222,6 +1225,7 @@ table.dataTable thead > tr > td.sorting {
     margin: 0;
     position: relative;
     z-index: 99;
+	width: 15%;
 }
 .user-menu.nav > li > a {
 	color: #fff;
@@ -1322,10 +1326,10 @@ table.dataTable thead > tr > td.sorting {
 	position: relative;
 }
 .sidebar-menu li a {
-	color: #b7c0cd;
+	color: #b7c0cd !important;
 	display: block;
 	font-size: 15px;
-	height: auto;
+	height: auto ;
 	padding: 0 20px;
 }
 .sidebar-menu li a:hover {
@@ -1517,6 +1521,7 @@ table.dataTable thead > tr > td.sorting {
 	justify-content: flex-start;
 	position: relative;
 	transition: all 0.2s ease-in-out 0s;
+	cursor:pointer;
 }
 .sidebar-menu ul li a i {
 	display: inline-block;
@@ -7844,7 +7849,7 @@ ul.comment-list li ul.children {
 		color: #999;
 	}
 	.header .has-arrow .dropdown-toggle > span:nth-child(2) {
-		display: none;
+		display: block;
 	}
 	.header .has-arrow .dropdown-toggle::after {
 		display: none;
@@ -8203,4 +8208,37 @@ ul.comment-list li ul.children {
 
 .error{
 color:red !important;
+}
+
+
+
+
+
+
+
+
+#loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/Preloader_8.gif) center no-repeat #fff;
+    opacity: .9;
+}
+
+.dropdown-item{
+	cursor: pointer;
+}
+.cdk-overlay-container{
+z-index: 99999 !important;
+}
+.box{
+    width: 250px;        
+    border: 3px solid #3f51b5;
+}
+.checkbox{
+	display: block;
+    margin: 45px auto;
 }
